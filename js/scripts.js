@@ -73,11 +73,7 @@ $(function() {
         // gets mouse position in px (calculated from google maps points)
       var x = Math.round((click.x - swBoundInP.x)*factor);
       var y = Math.round((click.y - neBoundInP.y)*factor);
-  
-  
-      //switches it to LatLng object
-      var clickedLatLng = map.getProjection().fromPointToLatLng(new google.maps.Point(pointX, pointY));
-     
+
       //prints position in other div
       $("#position").html('x: ' + x + ' y: ' + y);
     });
